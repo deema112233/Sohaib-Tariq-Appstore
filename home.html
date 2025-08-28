@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sohaib Tariq Apps - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official site for Sohaib Tariq Apps - iOS games and macOS apps.">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: 'Roboto', sans-serif; background: #f4f6f9; color: #2d2d2d; margin:0;}
+    header { background: #1a1f36; color: #fff; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { font-size: 1.5rem; margin: 0;}
+    nav { display: flex; gap: 1rem; }
+    nav a { color: #fff; text-decoration: none; padding: 0.3rem 0.9rem; border-radius: 4px;}
+    nav a:hover, nav a.active { background: #2d3657; color: #00bcd4;}
+    main { max-width:900px; margin:2rem auto; background:#fff; padding:2rem; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.08);}
+    footer { text-align: center; padding: 1.2rem; background: #01030fdd; color: #ffffff; margin-top: 2rem;}
+    @media (max-width: 768px) {
+      main { padding: 1rem;}
+      header { flex-direction: column; align-items: flex-start;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sohaib Tariq Apps</h1>
+    <nav>
+      <a href="home.html" class="active">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Uses</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  
+    <!-- Home Section -->
+  <section id="home" class="tab-content active">
+    <main>
+      <section>
+        <article class="post">
+          <h2>Sohaib Tariq AppStore</h2>
+          <p>Welcome to my app collection. Explore amazing apps and games built for iOS, iPadOS, and macOS.</p>
+        </article>
+        <article class="post">
+          <h2>Live Games</h2>
+          <p>Play interactive live games directly from the store. Fun, engaging, and constantly updated!</p>
+        </article>
+      </section>
+
+      <aside>
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="#">iOS Games</a></li>
+          <li><a href="#">iPad Games</a></li>
+          <li><a href="#">macOS Apps</a></li>
+        </ul>
+      </aside>
+    </main>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2024 Sohaib Tariq Apps. All rights reserved.</p>
+  </footer>
+</body>
+</html>

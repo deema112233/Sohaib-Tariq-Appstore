@@ -2,349 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Terms & Conditions - Sohaib Tariq Apps</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sohaib Tariq Apps</title>
+  <meta name="description" content="Terms and Conditions for Sohaib Tariq Apps">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Roboto', sans-serif;
-      background: #f4f6f9;
-      color: #2d2d2d;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #1a1f36;
-      color: #ffffff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    }
-
-    header h1 {
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: #ffffff;
-    }
-
-    nav {
-      display: flex;
-      gap: 1rem;
-    }
-
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      padding: 0.4rem 0.8rem;
-      border-radius: 4px;
-      transition: background 0.3s, color 0.3s;
-      cursor: pointer;
-    }
-
-    nav a:hover {
-      background: #2d3657;
-      color: #00bcd4;
-    }
-
-    nav a.active {
-      background: #2d3657;
-      color: #00bcd4;
-    }
-
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-    }
-
-    .menu-toggle span {
-      background: #fff;
-      height: 3px;
-      width: 25px;
-      margin: 4px 0;
-      transition: 0.3s;
-    }
-
-    main {
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      display: grid;
-      grid-template-columns: 3fr 1fr;
-      gap: 2rem;
-    }
-
-    .post {
-      background: #ffffff;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .post:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
-    }
-
-    .post h2 {
-      margin-bottom: 0.5rem;
-      color: #1a1f36;
-    }
-
-    .post .date {
-      font-size: 0.9rem;
-      color: #888;
-      margin-bottom: 1rem;
-    }
-
-    aside {
-      background: #ffffff;
-      padding: 1.2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    }
-
-    aside h3 {
-      margin-bottom: 1rem;
-      color: #1a1f36;
-    }
-
-    aside ul {
-      list-style: none;
-    }
-
-    aside ul li {
-      margin-bottom: 0.8rem;
-    }
-
-    aside ul li a {
-      text-decoration: none;
-      color: #2d2d2d;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    aside ul li a:hover {
-      color: #00bcd4;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1.2rem;
-      background: #1a1f36;
-      color: #ffffff;
-      margin-top: 2rem;
-      box-shadow: 0 -2px 6px rgba(0,0,0,0.15);
-    }
-
-    /* Sections hidden by default */
-    section.tab-content {
-      display: none;
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1.5rem;
-      background: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    }
-
-    section.tab-content.active {
-      display: block;
-    }
-
+    body { font-family: 'Roboto', sans-serif; background: #f4f6f9; color: #2d2d2d; margin:0;}
+    header { background: #1a1f36; color: #fff; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { font-size: 1.5rem; margin: 0;}
+    nav { display: flex; gap: 1rem; }
+    nav a { color: #fff; text-decoration: none; padding: 0.3rem 0.9rem; border-radius: 4px;}
+    nav a:hover, nav a.active { background: #2d3657; color: #00bcd4;}
+    main { max-width:900px; margin:2rem auto; background:#fff; padding:2rem; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.08);}
+    footer { text-align: center; padding: 1.2rem; background: #1a1f36; color: #ffffff; margin-top: 2rem;}
     @media (max-width: 768px) {
-      nav {
-        display: none;
-        flex-direction: column;
-        background: #1a1f36;
-        position: absolute;
-        top: 60px;
-        right: 10px;
-        padding: 1rem;
-        border-radius: 8px;
-      }
-
-      nav.active {
-        display: flex;
-      }
-
-      .menu-toggle {
-        display: flex;
-      }
-
-      main {
-        grid-template-columns: 1fr;
-      }
+      main { padding: 1rem;}
+      header { flex-direction: column; align-items: flex-start;}
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Sohaib Tariq Apps</h1>
-    <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
     <nav>
-  <a onclick="showTab('home', 'Home')" class="active">Home</a>
-  <a onclick="showTab('privacy', 'Privacy-Policy')">Privacy Policy</a>
-  <a onclick="showTab('terms', 'Term-and-Uses')">Terms & Uses</a>
-  <a onclick="showTab('contact', 'Contact-Us')">Contact Us</a>
-</nav>
-
+      <a href="home.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html" class="active">Terms & Uses</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
   </header>
 
-  <!-- Home Section -->
-  <section id="home" class="tab-content active">
-    <main>
-      <section>
-        <article class="post">
-          <h2>Sohaib Tariq AppStore</h2>
-          <p>Welcome to Sohaib tariq Apps. We create <b>high-quality iOS games</b> across all genres — from fun hypercasual challenges to immersive simulations and beyond. Our mission is to deliver <b>fun, creative, and polished gaming experiences</b> that players of all ages can enjoy.</p>
-        </article>
-      </section>
-
-      <aside>
-        <h3>Categories</h3>
-        <ul>
-          <li><a href="#">iOS Games</a></li>
-          <li><a href="#">macOS Apps</a></li>
-        </ul>
-      </aside>
-    </main>
-  </section>
-
-  <!-- Privacy Policy Section -->
-  <section id="privacy" class="tab-content">
-  <h2 style="color:#2c3e50;">Privacy Policy</h2>
-  <p>Sohaib Tariq Apps, its subsidiaries, and its affiliates ("Company," "We," "Us," or "Our") respect the privacy of its users ("User" or "You"). We are committed to protecting our users' information. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data when using our games.
-
-IF YOU DO NOT AGREE TO THIS POLICY, PLEASE DO NOT PLAY ANY GAMES FROM SOHAIB TARIQ APPS.
-
-If we change or modify our privacy policy, we will post those changes on this privacy policy page. WE RESERVE THE RIGHT TO CHANGE OR MODIFY THIS PRIVACY POLICY AT ANY TIME, so please review it frequently.
-
-BY PLAYING OUR GAMES, YOU AGREE TO THE TERMS & CONDITIONS SET FORTH IN THIS PRIVACY POLICY, including the possible collection and processing of your data as outlined below..</p>
-
-  <h3 style="color:#16a085;">1. OFFLINE USE</h3>
-  <p>Sohaib Tariq Apps allows the use of some features in its games offline (without an internet connection). Offline play will preclude the collection of any information about You and Your gameplay by Sohaib Tariq Apps or third parties..</p>
-
-  <h3 style="color:#2980b9;">2. ONLINE USE</h3>
-  <p>Sohaib Tariq Apps does not collect personally identifiable information from users. However, third-party services integrated into our games may collect and store certain information on their servers..</p>
-
-  <h3 style="color:#8e44ad;">3. NON-PERSONAL INFORMATION</h3>
-  <p>Sohaib Tariq Apps allows third parties to collect non-personal, non-identifiable information ("Non-Personal Information"). We do not know the identity of the users from whom this information is collected.
-
-Non-Personal Information collected by third parties may include:
-
-· Type of operating system (e.g., Android, iOS)
-
-· Type of browser (e.g., Chrome, Safari)
-
-· Screen resolution
-
-· Language settings
-
-· Device Vendor (e.g., Samsung, Apple)
-
-· General geo-location (no street or city-level data)
-
-This information is collected strictly for service functionality and performance analysis.
-</p>
-
-  <h3 style="color:#d35400;">4. PERSISTENT USER IDENTIFIER</h3>
-  <p>Third parties may collect a persistent user identifier, such as an Advertising ID (IDFA for iOS, AAID for Android). This identifier is used strictly for internal operations, including serving contextual ads.
-
-Sohaib Tariq Apps does not allow third parties to collect personally identifiable information or link personal data to a persistent identifier..</p>
-
-  <h3 style="color:#c0392b;">5. AD SERVING TECHNOLOGY</h3>
-  <p>Sohaib Tariq Apps may include proprietary or third-party ad-serving technologies that use cookies, tracking pixels, or other methods to collect data related to advertisements. This includes:
-
-· Device IDs
-
-· Information about your hardware and browser
-
-· Advertisements served and user interactions
-
-· In-game location of ads
-
-· Duration of ad views
-
-Ad-serving technologies are integrated into our games. If you do not wish to participate, do not play our games.
-Third-Party Advertising Providers: · 
-AdMob: https://www.google.com/policies/privacy/ · 
-Unity Ads: https://unity3d.com/legal/privacy-policy · 
-AppLovin: https://www.applovin.com/privacy/ · 
-Mintegral: https://www.mintegral.com/en/privacy</p>
-
-<h3 style="color:#d35400;">4. COOKIES</h3>
-<p> This Service does not explicitly use cookies. However, third-party services used in the app may employ cookies to collect information and improve their services. You can accept or refuse cookies and be
-
-notified when a cookie is sent to your device. If you disable cookies, some portions of the Service may not function properly.</p>
-<h3 style="color:#2980b9;">2. ANALYTICS AND DATA TRACKING</h3>
-<p>Sohaib Tariq Apps uses analytics tools such as Google Firebase Analytics and Unity Analytics to understand how players interact with our games. These tools help us gather insights about user behavior and improve gameplay experiences. Firebase Analytics and Unity Analytics may use cookies or similar technologies to collect gameplay data, including session duration, device type, and interactions within the game.
-
-The information collected is transmitted to and stored by Google and Unity Technologies. It is used to evaluate gameplay, generate reports, and provide statistical analysis that helps us enhance user experience. · Google Firebase Privacy Policy · Unity Analytics Documentation
-
-The General Data Protection Regulation (GDPR) is a European Union law regulating data privacy for EU citizens. 
-For more information: 
-· GDPR Information 
-· Unity GDPR Compliance 
-· Unity Privacy Policy</p>
-<h3 style="color:#d35400;">4.SECURITY</h3>
-<p> We use industry-standard security measures, including encryption, to protect your data. However, no system is completely secure, and we cannot guarantee unauthorized access will never occur.</p>
-<h3 style="color:#d35400;">4.IN-APP PURCHASES (IAP)</h3>
-
-<p> Some features or items in our games may be available for purchase through app stores (Google, Apple, etc.). All in-app purchases (IAP) are made with your full knowledge and consent. Sohaib Tariq Apps is not responsible for refunds or claims regarding IAPs. This policy applies only when in-app purchases are available in our games.</p>
-<h3 style="color:#d35400;">4.USER RIGHTS</h3>
-<p>If you are a resident of certain regions (e.g., the European Union under GDPR, California under CCPA), you may have the right to:
-
-· Request access to or deletion of your data
-
-· Opt out of personalized advertisements To exercise these rights, contact us at gamelab5@outlook.com.</p>
-<h3 style="color:#d35400;">4.INFORMATION SHARING</h3>
-<p>We may share information in the following situations:
-
-· To comply with legal requirements, such as subpoenas or governmental requests.
-
-· To enforce our Privacy Policy or Terms of Use, including investigating violations.
-
-· To detect, prevent, or address fraud, security, or technical issues.
-
-· To respond to claims that content in our games violates third-party rights.
-
-· To protect the rights, property, or safety of our company, users, or the public.
-
-· In cases of business mergers, acquisitions, or changes in company control.
-
-· With your approval, to provide services requested by you.
-
-· To enable our partners and affiliates to deliver contextual advertisements.</p>
-
-<h3 style="color:#d35400;">4.QUESTIONS AND FEEDBACK</h3>
-<p>If you have any questions regarding this Privacy Policy, please contact us at:
-
-Email: gamelab5@outlook.com
-
-We will do our best to respond to your inquiry as soon as possible.</p>
-  </section>
-
-  <!-- Terms & Conditions Section -->
-  <section id="terms" class="tab-content">
+  <main>
+    <!-- Terms & Conditions Section -->
+    <section id="terms" class="tab-content">
   <h2 style="color:#2c3e50;">Terms & Uses</h2>
+  <p>By using our apps, you agree to follow all applicable laws and respect intellectual property rights. Misuse or unauthorized modifications of our apps is strictly prohibited.</p>
   <p>Sohaib Tariq Apps(“Sohaib Tariq Apps”or “Sohaib Tariq”or “We” or “Us”), is a developer and publisher of games and mobile game applications that are made available via app stores including the Apple Application Store and Google Play Store (our “Games”).
 
 
@@ -443,7 +136,7 @@ You agree not to use any Game to (a) upload or distribute any computer viruses, 
   <p>Sohaib Tariq Apps may permit certain third-party applications (like leaderboards, game networks) to provide content through the Game (“Third Party Services”). The Game may be used to send content provided by the Third-Party Service between users who have the Third-Party Service installed on their device. When you do so, Sohaib Tariq Apps will share information with the Third-Party Service as described in the Sohaib Tariq AppsPrivacy Policy. Sohaib Tariq Appsis not responsible for and does not control Third-Party Services. Sohaib Tariq Appsprovides these Third-Party Services only as a convenience to you. Sohaib Tariq Appshas no obligation to review or monitor and does not approve, endorse, or make any representations or warranties with respect to Third-Party Services. You use all Third-Party Services at your own risk. When you access a Third-Party Service, the applicable third party’s terms and policies apply, including the third party’s privacy policies. You should make whatever investigation you
 
 feel necessary or appropriate before proceeding with any transaction in connection with any Third-Party Service.</p>
-  <h3 style="color:hsl(168, 76%, 36%);">1.OTHER USERS</h3>
+  <h3 style="color:#16a085;">1.OTHER USERS</h3>
   <p>A Game may contain User Content provided by other users of the Game. Sohaib Tariq Apps is not responsible for and does not control the User Content. Sohaib Tariq Apps has no obligation to review or monitor, and does not approve, endorse, or make any representations or warranties with respect to User Content. You use all User Content and interact with other users at your own risk. Your interactions with other users are solely between you and the other user and we are under no obligation to become involved. You agree that Sohaib Tariq Apps will not be responsible for any liability incurred as the result of any such interactions.</p>
 
   <h3 style="color:#2980b9;">2. RELEASE</h3>
@@ -461,7 +154,7 @@ feel necessary or appropriate before proceeding with any transaction in connecti
 
 8.2 SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OF CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU AND YOU MAY ALSO HAVE OTHER LEGAL RIGHTS THAT VARY FROM JURISDICTION TO JURISDICTION.</p>
 
-  <h3 style="color:#a149a4;">5. FEES</h3>
+  <h3 style="color:#c0392b;">5. FEES</h3>
    <h3 style="color:#c0392b;">5. IN-APP PURCHASES</h3>
   <p>Sohaib Tariq Apps may license to you certain virtual goods to be used within the Service and which you may purchase with real cash or which you may earn or redeem via gameplay (“Virtual Items”). Virtual Items are licensed to you on limited, personal, non-transferable, non-sub licensable and revocable basis and limited only for non-commercial use.
 
@@ -488,7 +181,7 @@ If you request that your personal data to be erased as specified in Sohaib Tariq
 
 
 YOU ACKNOWLEDGE THAT SOHAIB TARIQ APPSIS NOT REQUIRED TO PROVIDE A REFUND FOR ANY REASON, AND THAT YOU WILL NOT RECEIVE MONEY OR OTHER COMPENSATION FOR UNUSED VIRTUAL ITEMS WHEN YOU DELETE YOUR ACCOUNT OR WHEN YOU CEASE TO USE THE GAME.</p>
-  <h3 style="color:#67b148;">5. SUBSCRIPTIONS</h3>
+  <h3 style="color:#c0392b;">5. SUBSCRIPTIONS</h3>
   <p>Some parts of the Service are billed on a subscription basis (“Subscription(s)”). Subscription provides access to dynamic content or services from within the Game on an ongoing basis. Subscriptions may be available at different fees chargeable for a set period of time specified in the Game (“Subscription Period”). Payment will be taken from your iTunes or Google Play account (“Account”) when you confirm the Subscription by available confirmation tools of the Game.
 
 
@@ -505,77 +198,61 @@ Once you have bought a Subscription, You can manage it and switch off automatic 
 
 Except when required by law, paid Subscription Fees are non-refundable.
 
+  <h3 style="color:#16a085;">1. Acceptance of Terms</h3>
+  <p>By accessing or using our services, you confirm that you accept these terms and agree to comply with them.</p>
 
+  <h3 style="color:#2980b9;">2. User Responsibilities</h3>
+  <p>Users are expected to use the apps responsibly, avoid illegal activities, and not attempt to disrupt the service.</p>
 Sohaib Tariq Apps in its sole discretion and at any time may modify the Subscription Fee. Any Subscription Fee change will become effective at the end of the current Subscription period. You will be provided a reasonable prior notice of any change in Subscription Fee. If you do not take action to agree to the increase in Subscription Fee, Your Subscription shall expire at the end of the current Subscription period.
 
+  <h3 style="color:#8e44ad;">3. Intellectual Property</h3>
+  <p>All app content, branding, and design remain the property of the developers and cannot be copied or distributed without permission.</p>
 
+  <h3 style="color:#d35400;">4. Limitations of Liability</h3>
+  <p>We are not responsible for any damages caused by misuse, technical failures, or unauthorized use of our services.</p>
 You acknowledge and agree that all billing and transaction processes are handled by App Store or Google Play, from which platform you downloaded the App, and are governed by their terms and conditions. If you have any payment related issues, then you need to contact App Store or Google Play directly.</p>
   <h3 style="color:#c0392b;">5. MISCELLANEOUS</h3>
-   <h3 style="color:#4b50a4;">5. CHANGES TO THIS AGREEMENT</h3>
+   <h3 style="color:#c0392b;">5. CHANGES TO THIS AGREEMENT</h3>
   <p>This Agreement is subject to occasional revision, and if we make any substantial changes, we may notify you by prominently posting notice of the changes on our Site. These changes will be effective immediately for new users of our Games. Continued use of our Games following notice of such changes
 
+  <h3 style="color:#c0392b;">5. Modifications to Terms</h3>
+  <p>We may update these terms at any time. Continued use of the services means you agree to the updated terms.</p>
 shall indicate your acknowledgement of such changes and agreement to be bound by the terms and conditions of such changes. The date on which the latest update was made is indicated at the top of this</p>
-  <h3 style="color:#4bae8a;">5. NOTICE</h3>
+  <h3 style="color:#c0392b;">5. NOTICE</h3>
   <p> Any notice provided to Sohaib Tariq Apps pursuant to this Agreement should be sent to gamelab5@outlook.com</p>
   <h3 style="color:#c0392b;">5. SEVERABILITY</h3>
   <p>If any provision of this Agreement is, for any reason, held to be invalid or unenforceable, the other provisions of this Agreement will be unimpaired, and the invalid or unenforceable provision will be deemed modified so that it is valid and enforceable to the maximum extent permitted by law.</p>
-  <h3 style="color:#5fcbbb;">5. ENTIRE AGREEMENT</h3>
+  <h3 style="color:#c0392b;">5. ENTIRE AGREEMENT</h3>
   <p>This Agreement is the final, complete and exclusive agreement between you and Sohaib Tariq Apps with respect to the subject matters hereof (including all Games) and supersedes and merges all prior discussions and agreements between the parties with respect to such subject matters (including any prior End-User License Agreements and Terms of Service or Privacy Policy). Our failure to exercise or enforce any right or provision of this Agreement shall not operate as a waiver of such right or provision. The section titles in this Agreement are for convenience only and have no legal or contractual effect. The word “including” means “including without limitation”. Your relationship to Sohaib Tariq Apps is that of an independent contractor, and neither party is an agent or partner of the other. This Agreement, and your rights and obligations herein, may not be assigned by you without Sohaib Tariq Apps prior written consent, and any attempted assignment in violation of the foregoing will be null and void. Sohaib Tariq Apps may assign this Agreement in connection with a merger, acquisition, reorganization or sale of all or substantially all of its assets, or other operation of law, without your consent. The terms of this Agreement shall be binding upon assignees.</p>
   <h3 style="color:#c0392b;">5. APPLE APPLICATION STORE ADDITIONAL TERMS AND CONDITIONS</h3>
   <p>The following additional terms and conditions apply to you if you are using a Game from the Apple Application Store. To the extent the other terms and conditions of this Agreement are less restrictive than, or otherwise conflict with, the terms and conditions of this Section 10, the more restrictive or conflicting terms and conditions in this Section 10 apply, but solely with respect to Games from the Apple Application Store.</p>
   <h3 style="color:#c0392b;">5. ACKNOWLEDGEMENT</h3>
   <p>Sohaib Tariq Apps and you acknowledge that this Agreement is concluded between Sohaib Tariq Apps and you only, and not with Apple, and Sohaib tariq Apps,not Apple, is solely responsible for Game and the content thereof. To the extent this Agreement provides for usage the rules for Game that are less restrictive than the Usage Rules set forth for Game in, or otherwise is in conflict with, the Application Store Terms of Service, the more restrictive or conflicting Apple term applies.</p>
-  <h3 style="color:#3541a0;">5. SCOPE OF LICENSE</h3>
+  <h3 style="color:#c0392b;">5. SCOPE OF LICENSE</h3>
   <p>The license granted to you for Game is limited to a non-transferable license to use Game on an iOS Product that you own or control and as permitted by the Usage Rules set forth in the Application Store Terms of Service.</p>
   <h3 style="color:#c0392b;">5. MAINTENANCE AND SUPPORT</h3>
   <p>Sohaib Tariq Apps is solely responsible for providing any maintenance and support services with respect to Game, as specified in this Agreement (if any) or as required under applicable law. Sohaib Tariq Apps and you acknowledge that Apple has no obligation whatsoever to furnish any maintenance and support services with respect to Game.</p>
   
-  <h3 style="color:#11d292;">5.WARRANTY</h3>
+  <h3 style="color:#c0392b;">5.WARRANTY</h3>
   <p>Sohaib Tariq Apps is solely responsible for any product warranties, whether expressed or implied by law, to the extent not effectively disclaimed. In the event of any failure of Game to conform to any applicable warranty, you may notify Apple, and Apple may refund the purchase price for Game to you; and to the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to Game, and any other claims, losses, liabilities, damages, costs or expenses attributable to any failure to conform to any warranty will be Sohaib Tariq Apps sole responsibility.</p>
   <h3 style="color:#c0392b;">5. PRODUCT CLAIMS</h3>
   <p>Sohaib Tariq Apps and you acknowledge that Sohaib tariq Apps,not Apple, is responsible for addressing any claims of you or any third party relating to Game or your possession and/or use of Game, including, but not limited to: (i) product liability claims; (ii) any claim that Game fails to conform to any applicable legal or regulatory requirement; and (iii) claims arising under consumer protection or similar legislation. This Agreement does not limit Sohaib Tariq Apps liability to you beyond what is permitted by applicable law.</p>
-  <h3 style="color:#2c3280;">5. INTELLECTUAL PROPERTY RIGHTS</h3>
+  <h3 style="color:#c0392b;">5. INTELLECTUAL PROPERTY RIGHTS</h3>
   <p>Sohaib Tariq Apps and you acknowledge that, in the event of any third-party claim that Game or your possession and use of Game infringes the third party’s intellectual property rights, Sohaib tariq Apps,not Apple, will be solely responsible for the investigation, defense, settlement and discharge of any such intellectual property infringement claim.</p>
   <h3 style="color:#c0392b;">5. LEGAL COMPLIANCE</h3>
   <p>You represent and warrant that (i) you are not located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a “terrorist supporting” country; and (ii) you are not listed on any U.S. Government list of prohibited or restricted parties.</p>
-  <h3 style="color:#9f3a73;">5. DEVELOPER NAME AND ADDRESS</h3>
+  <h3 style="color:#c0392b;">5. DEVELOPER NAME AND ADDRESS</h3>
   <p>Sohaib Tariq Apps contact information for any end-user questions, complaints or claims with respect to Game is set forth in Section 9.2.</p>
   <h3 style="color:#c0392b;">5. THIRD-PARTY TERMS OF AGREEMENT</h3>
   <p>You must comply with applicable third-party terms of agreement when using a Game.</p>
-  <h3 style="color:#5b2453;">5. THIRD-PARTY BENEFICIARY</h3>
+  <h3 style="color:#c0392b;">5. THIRD-PARTY BENEFICIARY</h3>
   <p>Sohaib Tariq Apps and you acknowledge and agree that Apple, and Apple’s subsidiaries, are third-party beneficiaries of this Agreement, and that, upon your acceptance of the terms and conditions of this Agreement, Apple will have the right (and will be deemed to have accepted the right) to enforce this Agreement against you as a third-party beneficiary thereof.</p>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="tab-content">
-    <h2>Contact Us</h2>
-    <p>If you have any questions, feel free to reach out at "gamelab5@outlook.com"</p>
-  </section>
+  
+</section>
+  </main>
 
   <footer>
-    <p>&copy; My Site, All rights reserved.</p>
+    <p>&copy; 2024 Sohaib Tariq Apps. All rights reserved.</p>
   </footer>
-
-  <script>
-  function showTab(tabId, slug) {
-    // Hide all tabs
-    document.querySelectorAll('.tab-content').forEach(tab => {
-      tab.classList.remove('active');
-    });
-
-    // Show the clicked tab
-    document.getElementById(tabId).classList.add('active');
-
-    // Update active class on nav
-    document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
-    event.target.classList.add('active');
-
-    // Update URL without reload
-    if (slug) {
-      history.pushState(null, "", "/" + slug);
-    }
-  }
-</script>
-
 </body>
 </html>
